@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Form</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Styling for header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f1f1f1;
+      }
+
+    /* Styling for footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    /* Styling for login form */
+    .login-form {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    .login-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    
+    .login-form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+     .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        height: 100px; /* Adjust the height as per your logo's dimensions */
+      }
+  </style>
+</head>
+<body>
+  <header>
+ 
+
+
+
+  <img src="images/favicon.png" alt="Logo">
+  
+
+</header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="login-form">
+    <form action="addServlet" method="post" enctype="multipart/form-data">
+      <label >Car name:</label>
+      <input type="text" name="Car_name" required>
+      
+       <label >Car brand:</label>
+      <input type="text"  name="Car_brand" required>
+      
+      <label >Car year:</label>
+      <input type="text" name="Car_year" required>
+      
+       <label >Car image:</label>
+      <input type="file" name="Car_image" accept="image/*" />
+       <br />
+       <label >Car price per month:</label>
+      <input type="text" name="Car_month" required>
+      
+       <label >Car price per day:</label>
+      <input type="text" name="Car_day" required>
+      <input type="submit" value="Save">
+    </form>
+    
+  </div>
+  
+  
+<footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+    <p>Contact us: info@yourcompany.com</p>
+    <ul>
+        <li><a href="https://www.facebook.com/yourcompany">Facebook</a></li>
+        <li><a href="https://www.twitter.com/yourcompany">Twitter</a></li>
+        <li><a href="https://www.instagram.com/yourcompany">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/yourcompany">LinkedIn</a></li>
+    </ul>
+</footer>
+<style>
+    footer {
+        background-color: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    footer p {
+        margin: 10px 0;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer ul li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    
+    footer ul li a {
+        text-decoration: none;
+        color: #666;
+    }
+</style>
+
+
+</body>
+</html>
